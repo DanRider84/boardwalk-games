@@ -1,4 +1,3 @@
-
 /* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
 
@@ -13,6 +12,7 @@
 }
 
 /* Global styles */
+
 body {
   font-family: var(--primary-font);
 }
@@ -22,11 +22,33 @@ h2,
 h3 {
   font-family: var(--secondary-font);
   color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .sub-heading-color {
     color: var(--highlight-color);
 }
+
+.section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Navbar */
+
+#navbar {
+    background-color: var(--primary-color);
+}
+
+#navbar .logo {
+    width: 30px;
+}
+
+/* Header */
+
+#header .lead {
+    font-family: var(--secondary-font);
+
 
 /* Grid visualisation CSS for testing */
 
@@ -38,6 +60,5 @@ h3 {
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
-} */
-
-/* Navbar */
+    */ 
+  }
