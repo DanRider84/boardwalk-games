@@ -59,7 +59,7 @@ h2 {
 
 /* Services */
 
-#services .card {
+#services .card-footer {
     font-weight: bold;
     color: var(--highlight-color);
     background-color: transparent;
@@ -67,6 +67,20 @@ h2 {
 
 #services .card {
     margin-bottom: 1.5rem;
+}
+
+/* Game library */
+
+#new-games-section {
+  margin-bottom: 1.5rem;
+}
+
+#new-games-section .card {
+    font-weight: bold;
+    color: var(--highlight-color);
+    background-color: transparent;
+    margin-bottom: 1.5rem;
+}
 
 
 /* Grid visualisation CSS for testing */
@@ -79,8 +93,7 @@ h2 {
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
-  */
-} 
+} */
 
 /* Media queries */
 
@@ -101,7 +114,7 @@ h2 {
 }
 
 
-/* XL devices (large desktops, 1200px and up) */
+/* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
     /* Make all service cards the same height for consistency */
     #services .card-body {
@@ -109,9 +122,10 @@ h2 {
     }
 }
 
-/* XXL devices (larger desktops, 1400px and up) */
+/* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
     /* Make all service cards the same height for consistency */
     #services .card-body {
       min-height: 195px;
+    }
 }
