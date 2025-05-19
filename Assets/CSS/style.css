@@ -69,17 +69,11 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-/* Game library */
+/* Game library cards */
 
-#new-games-section {
-  margin-bottom: 1.5rem;
-}
-
-#new-games-section .card {
-    font-weight: bold;
-    color: var(--highlight-color);
-    background-color: transparent;
-    margin-bottom: 1.5rem;
+#new-games .card,
+#fav-games .card {
+    border: none;
 }
 
 
