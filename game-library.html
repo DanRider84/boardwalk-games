@@ -219,80 +219,84 @@
                 </div>
             </div>
         </section>
-     </main>
-
-    <!-- Footer / contact section -->
-    <footer id="contact" class="mt-auto">
-        <div class="container section">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <h2 class="display-6">Contact us!</h2>
-                </div>
-                <!-- Contact info -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <h3 class="sub-heading-color">Contact Info</h3>
-                    <address>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <strong>Boardwalk Games</strong></br>
-                        123 Boardwalk</br>
-                        Boardwalk City, 12345
-                    </address>
-                    <p><i class="fa-solid fa-phone"></i> 012 345 6789<br/>
-                    <i class="fa-regular fa-paper-plane"></i> info@boardwalk-games.co</p>
-                    <div class="social-links my-4">
-                        <a href="https://www.instagram.com" target="_blank" rel=“noopener”
-                            aria-label="Visit our instagram page"><i 
-                            class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com" target="_blank" rel=“noopener”
-                            aria-label="Visit our Facebook page"><i 
-                            class="fa-brands fa-square-facebook"></i>
-                        </a>
-                        <a href="https://www.x.com" target="_blank" rel=“noopener” 
-                            aria-label="Visit our X page"><i 
-                            class="fa-brands fa-x-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Opening times -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <h3 class="sub-heading-color">Opening times</h3>
-                    <table class="table table-dark">
-                        <thead>
-                            <tr>
-                                <th scope="col">Day</th>
-                                <th scope="col">Open</th>
-                                <th scope="col">Close</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Mon</th>
-                                <td colspan="2">Closed</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Tue - Thur</th>
-                                <td>11am</td>
-                                <td>11pm</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Fri - Sat</th>
-                                <td>11am</td>
-                                <td>12am</td>
-                            </tr>
-                                <th scope="row">Sun</th>
-                                <td>12pm</td>
-                                <td>7pm</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+               
+        <!-- Breakpoints 
+        sm	≥576px
+        md	≥768px
+        lg	≥992px
+        xl	≥1200px                   
+        xxl	≥1400px-->        
+        
+        <!-- Reservation form -->
+        <section id="reservation" class="container my-5">  
+            <div class="row">
+                    <div class="col-12 text-center">
+                    <h2 class="display-6">Reserve a Game</h2>
             </div>
-        </div>
+
+            <!-- Centered wrapper for description + form -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-8 col-xl-8">
+
+                        <!-- Paragraph (matches form width exactly) -->
+                        <div class="mb-4">
+                            <p>
+                            Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the adventure begin! 
+                            Fill out your details and preferred game below, and we'll have it set aside for you when you arrive.
+                            </p>
+                        </div>
+
+                        <!-- Form (shares the same width column as paragraph) -->
+                        <form type="submit" action="./success.html" method="GET">
+                            <div class="row gx-4 gy-3">
+                            <div class="col-sm-6 col-md-12 col-lg-4">
+                                <label for="full-name" class="form-label">Full name</label>
+                                <input type="text" class="form-control" id="full-name" name="full-name" required>
+                            </div>
+
+                            <div class="col-sm-6 col-md-12 col-lg-4">
+                                <label for="phone-number" class="form-label">Phone number</label>
+                                <input type="tel" class="form-control" id="phone-number" name="phone-number" required>
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 col-lg-4">
+                                <label for="email-address" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email-address" name="email-address" required>
+                            </div>
+
+                            <div class="col-sm-6 col-md-12 col-lg-8">
+                                <label for="select-game" class="form-label">Select game</label>
+                                <select class="form-select" id="select-game" name="select-game" required>
+                                <option value="" disabled selected>Select game</option>
+                                <option>Galaxy Pioneers</option>
+                                <option>Mystic Woods</option>
+                                <option>Captain's Gambit</option>
+                                <option>Critter Quest</option>
+                                <option>Setters of Catan</option>
+                                <option>Monopoly</option>
+                                <option>Exploding Kittens</option>
+                                <option>Cluedo</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-6 col-md-12 col-lg-4">
+                                <label for="requested-date" class="form-label">Requested date</label>
+                                <input type="date" class="form-control" id="requested-date" name="requested-date">
+                            </div>
+
+                            <div class="col-12 text-end">
+                                <button class="btn custom-button-outline">Submit</button>
+                            </div>
+                            </div>
+                        </form>
+
+                        </div>
+                    </div>
+                </div>        
+
+
     </footer>
- 
-
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
